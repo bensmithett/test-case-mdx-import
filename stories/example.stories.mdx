@@ -1,0 +1,20 @@
+import { Meta, Story } from '@storybook/addon-docs'
+
+<Meta title='Example' />
+
+export const Template = (args) => <div {...args}>Hello</div>
+
+# Example
+
+Does this work?
+
+## Stories
+
+### Foo
+
+<Story
+  name='Foo'
+  args={{ style: { background: 'red' } }}
+>
+  {Template.bind({})}
+</Story>
